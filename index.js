@@ -49,6 +49,7 @@ const writeAllDirectoriesInfoRecursive = async (rootDirPath) => {
     directoryInfo = await getDirectoryInfo(rootDirPath);
   } catch (err) {
     console.error("Error reading directory:", err);
+    return;
   }
   const mappedDirectoryInfo = {
     path: directoryInfo.path,
