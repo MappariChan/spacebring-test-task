@@ -66,7 +66,6 @@ const writeAllDirectoriesInfoRecursive = async (rootDirPath) => {
     folderCount: directoryInfo.folders.length,
   };
 
-  console.log(mappedDirectoryInfo);
   const directoryInfoFileName = path.join(rootDirPath, "info.json");
   createJsonFile(directoryInfoFileName, mappedDirectoryInfo);
 
