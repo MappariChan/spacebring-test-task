@@ -69,3 +69,5 @@ const writeAllDirectoriesInfoRecursive = async (rootDirPath) => {
 
 // Pass into this function path to the directory
 writeAllDirectoriesInfoRecursive("DirectoryPath");
+
+// On the mac there is redundant count for DS_store folder
