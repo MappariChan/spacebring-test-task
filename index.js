@@ -27,7 +27,7 @@ const getDirectoryInfo = async (dirPath) => {
   return directoryInfo;
 };
 
-function createJsonFile(filePath, data) {
+const createJsonFile = (filePath, data) => {
   const normalizedFilePath = path.resolve(filePath);
   const jsonString = JSON.stringify(data);
   const dir = path.dirname(normalizedFilePath);
@@ -41,7 +41,7 @@ function createJsonFile(filePath, data) {
       console.log("File has been created and saved.");
     }
   });
-}
+};
 
 const writeAllDirectoriesInfoRecursive = async (rootDirPath) => {
   let directoryInfo;
